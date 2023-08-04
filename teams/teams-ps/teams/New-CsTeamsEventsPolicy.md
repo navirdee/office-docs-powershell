@@ -14,7 +14,7 @@ This cmdlet allows you to create a new TeamsEventsPolicy instance and set its pr
 ## SYNTAX
 
 ```
-New-CsTeamsEventsPolicy [-Identity] <String> [-AllowWebinars <String>] [-AllowTownhalls <String>] [-Description <String>]
+New-CsTeamsEventsPolicy [-Identity] <String> [-AllowWebinars <String>] [-AllowTownhalls <String>] [-Description <String>] [-AllowEmailEditing <String>] [-Description <String>]
  [-EventAccessType <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -64,6 +64,26 @@ This setting governs if a user can create town halls using Teams Events.
 Possible values are:
  - **Enabled**: Enables creating town halls.
  - **Disabled**: Disables creating town hall.
+
+
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: Named
+Default value: Enabled
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AllowEmailEditing
+This setting governs if a user is allowed to edit communication emails in Teams Town hall and Webinar Events. 
+Possible values are:
+ - **Enabled**: Enables editing of communications emails.
+ - **Disabled**: Disables editing of communications emails.
 
 
 
